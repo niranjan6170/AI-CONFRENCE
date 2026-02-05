@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0a192f;
+    color: white;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: #020c1b;
+}
+
+.logo span {
+    color: #00f5ff;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+/* SECTIONS */
+.section {
+    padding: 50px;
+}
+
+.card {
+    background: #112240;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* PRE REGISTRATION */
+.pre-registration {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.form-card {
+    width: 350px;
+}
+
+.form-card input,
+.form-card select,
+.form-card button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+.form-card button {
+    background: #00f5ff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.success-msg {
+    display: none;
+    color: #00f5ff;
+    text-align: center;
+}
+
+/* ADMIN */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #00f5ff;
+    padding: 8px;
+}
+
+.danger {
+    margin-top: 15px;
+    background: red;
+    color: white;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+.speaker-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}

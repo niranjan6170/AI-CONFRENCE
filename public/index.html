@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI & Tech Conference</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="image.jpg">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+
+    <!-- ================= PRE-REGISTRATION OVERLAY ================= -->
+    <div id="preRegistration" class="pre-registration">
+        <div class="card form-card">
+            <h2>Conference Registration</h2>
+            <form id="registrationForm">
+                <input type="text" id="name" placeholder="Full Name" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+                <select id="role" required>
+                    <option value="">Select Your Role</option>
+                    <option value="Student">Student</option>
+                    <option value="Professional">Professional</option>
+                    <option value="Researcher">Researcher</option>
+                </select>
+                <select id="mode" required>
+                    <option value="">Mode of Attendance</option>
+                    <option value="Online">Online</option>
+                    <option value="Offline">Offline</option>
+                </select>
+                <button type="submit">Register</button>
+            </form>
+            <p id="successMessage" style="display:none; color:#00f5ff;">
+                ✅ Registration Successful! Enjoy the conference.
+            </p>
+        </div>
+    </div>
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar">
+        <h2 class="logo">AI<span>Conf</span></h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+        </ul>
+    </nav>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section id="home" class="hero">
+        <h1>AI & Tech Conference 2026</h1>
+        <p>Innovating the Future of Technology</p>
+    </section>
+
+    <!-- ================= ABOUT SECTION ================= -->
+    <section id="about" class="section">
+        <div class="card">
+            <h2>About the Event</h2>
+            <p>The AI & Tech Conference is a premier technology event designed to bring together
+               students, professionals, researchers, and industry experts. Focus is on AI, Data Science,
+               Cloud Computing, and modern software technologies.
+            </p>
+        </div>
+    </section>
+
+    <!-- ================= SPEAKERS SECTION ================= -->
+    <section id="speakers" class="section hidden">
+        <h2>Key Speakers</h2>
+        <div class="grid">
+            <div class="card"><h3>Dr. Alan Smith</h3><p>AI Scientist</p></div>
+            <div class="card"><h3>Ms. Sophia Lee</h3><p>Data Scientist</p></div>
+            <div class="card"><h3>Mr. John Carter</h3><p>Cloud Architect</p></div>
+        </div>
+    </section>
+
+    <!-- ================= SCHEDULE SECTION ================= -->
+    <section id="schedule" class="section hidden">
+        <h2>Event Schedule</h2>
+        <div class="grid">
+            <div class="card"><h3>Day 1</h3><p>Keynote Sessions</p></div>
+            <div class="card"><h3>Day 2</h3><p>Workshops & Labs</p></div>
+            <div class="card"><h3>Day 3</h3><p>Hackathon & Project Showcase</p></div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <p>© 2026 AI & Tech Conference | All Rights Reserved</p>
+    </footer>
+
+    <!-- ================= EXTERNAL JS ================= -->
+    <script src="registration.js"></script>
+  
+</body>
+</html>

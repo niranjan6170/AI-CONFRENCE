@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h2>Admin – Registered Users</h2>
+
+<input type="password" id="adminPass" placeholder="Admin Password">
+<button onclick="loadUsers()">View Registrations</button>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Name</th><th>Email</th><th>Phone</th>
+            <th>Role</th><th>Mode</th><th>Date</th>
+        </tr>
+    </thead>
+    <tbody id="userTable"></tbody>
+</table>
+
+<script src="admin.js"></script>
+</body>
+</html>
