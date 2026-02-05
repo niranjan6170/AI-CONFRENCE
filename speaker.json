@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Dr. Alan Smith",
+    "title": "AI Research Scientist",
+    "image": "images/speaker1.jpg"
+  },
+  {
+    "name": "Ms. Sophia Lee",
+    "title": "Senior Data Scientist",
+    "image": "images/speaker2.jpg"
+  },
+  {
+    "name": "Mr. John Carter",
+    "title": "Cloud Architect",
+    "image": "images/speaker3.jpg"
+  }
+]
